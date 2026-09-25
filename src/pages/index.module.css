@@ -1,0 +1,195 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 5.5rem 0 4.5rem;
+  background: var(--home-hero-surface);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.hero::after {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+    90deg,
+    transparent 0,
+    transparent calc(50% - 1px),
+    var(--home-grid-line) calc(50% - 1px),
+    var(--home-grid-line) 50%,
+    transparent 50%,
+    transparent calc(100% - 1px),
+    var(--home-grid-line) calc(100% - 1px),
+    var(--home-grid-line) 100%,
+    transparent 100%
+  );
+  content: '';
+  pointer-events: none;
+}
+
+.heroInner {
+  position: relative;
+  z-index: 1;
+  max-width: 920px;
+}
+
+.eyebrow,
+.sectionEyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--ifm-color-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.heroTitle {
+  max-width: 720px;
+  margin-bottom: 1.25rem;
+  font-size: clamp(2.45rem, 6vw, 4.6rem);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+.heroDescription {
+  max-width: 670px;
+  margin-bottom: 2rem;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.main {
+  padding-top: 4.5rem;
+  padding-bottom: 4rem;
+}
+
+.projectSection {
+  margin-bottom: 4rem;
+}
+
+.sectionHeading {
+  max-width: 640px;
+  margin-bottom: 2rem;
+}
+
+.sectionHeading > p:last-child,
+.referenceBanner p {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.projectCard {
+  display: flex;
+  min-height: 220px;
+  flex-direction: column;
+  padding: 1.5rem;
+  color: inherit;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 14px;
+  transition: border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.projectCard:hover {
+  color: inherit;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.09);
+  transform: translateY(-3px);
+}
+
+.cardTopline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.projectLabel {
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.cardArrow {
+  color: var(--ifm-color-primary);
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.projectName {
+  margin-bottom: 0.65rem;
+  font-size: 1.35rem;
+}
+
+.projectDescription {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.7;
+}
+
+.referenceBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  background: var(--home-banner-surface);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 14px;
+}
+
+.referenceBanner > div {
+  max-width: 700px;
+}
+
+.referenceBanner h2 {
+  margin-bottom: 0.5rem;
+}
+
+.referenceBanner p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 996px) {
+  .hero {
+    padding: 4rem 0 3.5rem;
+  }
+
+  .referenceBanner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 3.5rem 0 3rem;
+  }
+
+  .main {
+    padding-top: 3rem;
+  }
+
+  .projectGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .projectCard {
+    min-height: 0;
+  }
+
+  .cardTopline {
+    margin-bottom: 1.5rem;
+  }
+}

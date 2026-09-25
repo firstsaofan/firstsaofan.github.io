@@ -1,0 +1,44 @@
+:root {
+  --ifm-color-primary: #4f46e5;
+  --ifm-color-primary-dark: #4338ca;
+  --ifm-color-primary-darker: #3f35c2;
+  --ifm-color-primary-darkest: #332a9f;
+  --ifm-color-primary-light: #635beb;
+  --ifm-color-primary-lighter: #6d66ed;
+  --ifm-color-primary-lightest: #8983f2;
+  --ifm-background-color: #f8fafc;
+  --ifm-background-surface-color: #ffffff;
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --ifm-heading-font-family: var(--ifm-font-family-base);
+  --ifm-navbar-shadow: 0 1px 0 rgba(15, 23, 42, 0.08);
+  --ifm-footer-background-color: #0f172a;
+  --ifm-code-font-size: 95%;
+  --home-hero-surface: #eef2ff;
+  --home-grid-line: rgba(99, 102, 241, 0.09);
+  --home-banner-surface: #e0e7ff;
+  --docusaurus-highlighted-code-line-bg: rgba(79, 70, 229, 0.12);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #a5b4fc;
+  --ifm-color-primary-dark: #8b9afb;
+  --ifm-color-primary-darker: #7b8cfa;
+  --ifm-color-primary-darkest: #5267f7;
+  --ifm-color-primary-light: #bfcefd;
+  --ifm-color-primary-lighter: #cfdaff;
+  --ifm-color-primary-lightest: #f0f3ff;
+  --ifm-background-color: #0b1120;
+  --ifm-background-surface-color: #111a2e;
+  --home-hero-surface: #111a35;
+  --home-grid-line: rgba(165, 180, 252, 0.1);
+  --home-banner-surface: #172244;
+  --docusaurus-highlighted-code-line-bg: rgba(165, 180, 252, 0.16);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+[data-aigc-mark='1'] {
+  display: none !important;
+}

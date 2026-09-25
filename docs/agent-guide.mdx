@@ -1,0 +1,58 @@
+---
+title: 文档编写指南
+sidebar_label: 文档编写指南
+---
+
+# 文档编写指南
+
+本指南定义桃源耕云客（firstsaofan）文档中心的写作与维护规则。目标是让项目文档能够随代码持续更新，并且可以被其他 Agent 稳定维护。
+
+## 文档位置
+
+正式项目文档统一放在 `docs/projects/<项目标识>/`：
+
+```text
+docs/projects/
+├── fire-free/
+│   └── index.mdx
+├── aion2/
+│   └── index.mdx
+├── token-counter/
+│   └── index.mdx
+└── anime/
+    └── index.mdx
+```
+
+`docs/tutorial-basics/` 与 `docs/tutorial-extras/` 是 Docusaurus 教程参考资料，不作为正式项目文档入口。
+
+## 编写规则
+
+1. 每个页面只使用一个一级标题，标题应直接说明页面内容。
+2. 先写用户需要完成的目标，再补充概念、配置和实现细节。
+3. 命令、配置和代码块必须标明语言；示例必须来自已验证的实现。
+4. 不编造功能、参数、接口、版本号、兼容性或部署步骤。未确认的信息应标记为“待补充”。
+5. 页面标题和文件名使用清晰、可搜索的名称；链接使用相对路径。
+6. 项目入口页应链接到后续的有效文档，避免出现无内容的导航项。
+7. 新页面完成后，将它加入 `sidebars.ts` 对应的项目分类。
+
+## 推荐页面结构
+
+项目文档按实际需要创建，不必为了完整而生成空文件：
+
+```text
+index.mdx           项目概览与入口
+installation.mdx    安装与初始化
+configuration.mdx   配置说明
+usage.mdx           使用指南
+api.mdx             API 或命令说明
+deployment.mdx      部署与维护
+faq.mdx             常见问题
+```
+
+## Agent 更新流程
+
+1. 先阅读项目代码、README、配置和已验证的使用步骤。
+2. 在对应项目目录中新增或更新 Markdown/MDX 页面。
+3. 更新 `sidebars.ts`，让新页面出现在正确的项目分类中。
+4. 运行 `npm run typecheck` 和 `npm run build`。
+5. 仅记录已确认的信息；无法确认的内容保留为明确的待办项。

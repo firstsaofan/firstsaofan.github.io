@@ -1,0 +1,55 @@
+---
+sidebar_position: 1
+---
+
+# 管理文档版本
+
+Docusaurus 可以管理文档的多个版本。
+
+## 创建文档版本
+
+发布项目的 1.0 版本：
+
+```bash
+npm run docusaurus docs:version 1.0
+```
+
+`docs` 文件夹会被复制到 `versioned_docs/version-1.0`，同时创建 `versions.json`。
+
+现在文档有两个版本：
+
+- `1.0`：访问 http://localhost:3000/docs/ 查看 1.0 版本文档
+- `current`：访问 http://localhost:3000/docs/next/ 查看**即将发布、尚未发布的文档**
+
+## 添加版本下拉菜单
+
+为了在不同版本之间切换，添加版本下拉菜单。
+
+修改 `docusaurus.config.js`：
+
+```js title="docusaurus.config.js"
+export default {
+  themeConfig: {
+    navbar: {
+      items: [
+        // highlight-start
+        {
+          type: 'docsVersionDropdown',
+        },
+        // highlight-end
+      ],
+    },
+  },
+};
+```
+
+现在导航栏中会显示文档版本下拉菜单：
+
+![文档版本下拉菜单](./img/docsVersionDropdown.png)
+
+## 更新已有版本
+
+可以在对应的文件夹中编辑已版本化的文档：
+
+- `versioned_docs/version-1.0/hello.md` 更新 http://localhost:3000/docs/hello
+- `docs/hello.md` 更新 http://localhost:3000/docs/next/hello

@@ -1,0 +1,45 @@
+---
+sidebar_position: 1
+---
+
+# 文档入门
+
+用不到 5 分钟了解 **Docusaurus** 的基本使用方式。
+
+## 开始使用
+
+先创建一个新站点，或直接打开已有的文档项目。
+
+### 准备环境
+
+- [Node.js](https://nodejs.org/en/download/) 20.0 或更高版本：
+  - 安装 Node.js 时，建议勾选与依赖项相关的所有选项。
+
+## 创建新站点
+
+使用 **classic 模板**生成一个新的 Docusaurus 站点：
+
+```bash
+npm init docusaurus@latest my-website classic
+```
+
+运行命令后，classic 模板会自动添加到项目中。
+
+你可以在命令提示符、PowerShell、终端或代码编辑器的集成终端中执行这条命令。
+
+命令还会安装运行 Docusaurus 所需的全部依赖。
+
+## 启动站点
+
+运行开发服务器：
+
+```bash
+cd my-website
+npm run start
+```
+
+`cd` 用于切换当前工作目录。进入新创建的 Docusaurus 站点目录后，再执行启动命令。
+
+`npm run start` 会在本地构建网站并启动开发服务器。启动成功后，可以在浏览器打开 http://localhost:3000/ 查看站点。
+
+打开 `docs/intro.mdx`（本页）并修改内容，站点会自动重新加载并显示修改结果。

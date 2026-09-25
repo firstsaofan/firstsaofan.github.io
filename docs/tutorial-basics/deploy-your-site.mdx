@@ -1,0 +1,31 @@
+---
+sidebar_position: 5
+---
+
+# 部署站点
+
+Docusaurus 是一个**静态站点生成器**，也称为 **[Jamstack](https://jamstack.org/)**。
+
+它会将站点构建为简单的**静态 HTML、JavaScript 和 CSS 文件**。
+
+## 构建站点
+
+为生产环境构建站点：
+
+```bash
+npm run build
+```
+
+静态文件会生成在 `build` 文件夹中。
+
+## 部署站点
+
+在本地测试生产构建：
+
+```bash
+npm run serve
+```
+
+此时可以在 [http://localhost:3000/](http://localhost:3000/) 查看 `build` 文件夹中的站点。
+
+现在可以将 `build` 文件夹部署到大多数静态托管环境，成本通常很低或免费。详情请阅读 **[部署指南](https://docusaurus.io/docs/deployment)**。

@@ -1,0 +1,8 @@
+{
+  "label": "教程 - 基础",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "用 5 分钟了解 Docusaurus 的核心概念。"
+  }
+}
