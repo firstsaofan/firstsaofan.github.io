@@ -39,6 +39,13 @@ html {
   scroll-behavior: smooth;
 }
 
+/* 时间线页不设目录栏，让条目铺满整块内容区。:has() 不支持时自动退回默认宽度。 */
+@media (min-width: 997px) {
+  .docItemCol:has(.changelog-timeline) {
+    max-width: 100% !important;
+  }
+}
+
 [data-aigc-mark='1'] {
   display: none !important;
 }

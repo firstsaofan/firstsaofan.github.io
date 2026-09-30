@@ -51,6 +51,7 @@ faq.mdx
 4. 运行 `npm run typecheck`。
 5. 运行 `npm run build`。
 6. 不执行 `git commit`、`git push` 或任何外部发布操作，除非用户明确要求。
+7. 每次修改、新增或删除内容后，必须在回复末尾给出一条简略的 commit 信息文本，格式为 `类型: 简短说明`（类型取 `feat`、`fix`、`docs`、`refactor`、`chore` 等），说明用中文，一行以内，必要时附关键文件路径。commit 由用户自行执行。
 
 ## 外部资料访问边界
 

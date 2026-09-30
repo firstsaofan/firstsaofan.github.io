@@ -11,14 +11,18 @@ const sidebars: SidebarsConfig = {
           label: 'FIRE自由',
           items: [
             'projects/fire-free/index',
+            'projects/fire-free/about',
             'projects/fire-free/getting-started',
             'projects/fire-free/map',
+            'projects/fire-free/fire-paths',
             'projects/fire-free/content-and-account',
+            'projects/fire-free/titles',
             'projects/fire-free/collaboration',
             'projects/fire-free/tools',
             'projects/fire-free/faq',
             'projects/fire-free/platform-rules',
             'projects/fire-free/disclaimer',
+            'projects/fire-free/changelog',
           ],
         },
         {
