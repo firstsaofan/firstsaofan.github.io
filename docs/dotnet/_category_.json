@@ -1,0 +1,8 @@
+{
+  "label": ".NET 知识库",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": ".NET 与 C# 学习资源导航：路线图、电子书、速查表、博客、newsletter、播客、YouTube、社区与会议。"
+  }
+}

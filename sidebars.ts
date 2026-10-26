@@ -32,6 +32,22 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
+    {
+      type: 'category',
+      label: '.NET 知识库',
+      items: [
+        'dotnet/index',
+        'dotnet/roadmaps',
+        'dotnet/books',
+        'dotnet/cheat-sheets',
+        'dotnet/blogs',
+        'dotnet/newsletters',
+        'dotnet/podcasts',
+        'dotnet/youtube',
+        'dotnet/community',
+        'dotnet/conferences',
+      ],
+    },
   ],
 };
 

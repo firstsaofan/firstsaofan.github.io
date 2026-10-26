@@ -1,0 +1,76 @@
+---
+title: 学习路线图
+sidebar_label: 学习路线图
+description: 按职级划分的 .NET 学习路径与技术路线图入口。
+---
+
+# 学习路线图
+
+本页汇总 .NET 开发者的分阶段学习路径，以及各技术方向的路线图入口。
+
+:::info
+本节内容整理自源仓库 `roadmaps.md`（快照日期 2026-10-25）。链接均已逐一实测。
+:::
+
+## 分阶段学习路径
+
+以下三个阶段按职级递进，每个阶段列出需要掌握的知识点。顺序是建议而非强制，可按自身薄弱环节调整。
+
+### Junior .NET Developer
+
+先掌握基础，再进入框架。
+
+1. **C# 基础** — 变量、类型、控制流、方法与类。
+2. **面向对象** — 继承、多态、封装与抽象。
+3. **集合与 LINQ** — `List`、`Dictionary`、`IEnumerable` 与 LINQ 运算符。
+4. **async / await** — `Task`、异步模式与 `CancellationToken`。
+5. **ASP.NET Core 基础** — Web API、路由、控制器与中间件管道。
+6. **Entity Framework Core** — 模型、`DbContext`、迁移与基础 CRUD。
+7. **SQL 基础** — `SELECT`、`JOIN`、索引与存储过程。
+8. **Git** — 提交、分支、Pull Request、merge 与 rebase 的区别。
+9. **单元测试** — xUnit 或 NUnit，Arrange-Act-Assert 模式。
+
+### Mid-Level .NET Developer
+
+在基础之上加入架构与高级模式。
+
+1. **设计模式** — Repository、Factory、Decorator、Strategy 与 Observer。
+2. **SOLID 原则** — 每条原则配真实 C# 示例。
+3. **整洁架构** — 分层、依赖规则、用例与抽象。
+4. **CQRS 与 MediatR** — 命令、查询、处理程序与管道行为。
+5. **REST API 设计** — 版本管理、分页、错误处理与 OpenAPI。
+6. **身份验证与授权** — JWT、OAuth 2.0 与 ASP.NET Core Identity。
+7. **缓存策略** — 内存缓存、Redis 与缓存失效。
+8. **Docker** — .NET 应用容器化、Dockerfile 最佳实践、docker-compose。
+9. **CI/CD** — GitHub Actions 或 Azure DevOps 的 .NET 流水线。
+10. **集成测试** — `WebApplicationFactory` 与 TestContainers。
+
+### Senior .NET Developer
+
+构建可扩展、可观测、高可用系统的高级主题。
+
+1. **微服务架构** — 服务拆分、限界上下文与 API 网关。
+2. **事件驱动架构** — MassTransit、RabbitMQ 与 outbox 模式。
+3. **性能工程** — BenchmarkDotNet、`Span<T>`、内存分析与分配削减。
+4. **可观测性** — OpenTelemetry、分布式追踪、指标与仪表盘。
+5. **云原生 .NET** — Azure App Services、AKS、Azure Service Bus 与 .NET Aspire。
+6. **事件溯源** — 事件存储、Marten、投影与带事件的 CQRS。
+7. **安全工程** — 威胁建模、.NET 的 OWASP Top 10 与密钥管理。
+8. **系统设计** — 可扩展性模式、容错、CAP 定理与最终一致性。
+
+## 技术方向路线图
+
+| 技术 | 路线图 |
+| --- | --- |
+| C# | [roadmap.sh/csharp](https://roadmap.sh/csharp) |
+| ASP.NET Core | [roadmap.sh/aspnet-core](https://roadmap.sh/aspnet-core) |
+| SQL | [roadmap.sh/sql](https://roadmap.sh/sql) |
+| Docker | [roadmap.sh/docker](https://roadmap.sh/docker) |
+| Kubernetes | [roadmap.sh/kubernetes](https://roadmap.sh/kubernetes) |
+| Azure | [roadmap.sh/azure](https://roadmap.sh/azure) |
+| DevOps | [roadmap.sh/devops](https://roadmap.sh/devops) |
+| 软件架构 | [roadmap.sh/software-design-architecture](https://roadmap.sh/software-design-architecture) |
+
+## 交互式路线图站点
+
+[roadmap.sh](https://roadmap.sh/) 提供可交互的可视化路线图，可按进度勾选节点。

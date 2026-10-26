@@ -25,6 +25,12 @@ const projects: Project[] = [
     description: '工具集的项目说明、使用方式与维护记录。',
     to: '/docs/projects/firstsaofan-toolset',
   },
+  {
+    name: '.NET 知识库',
+    label: '学习资源',
+    description: '.NET 与 C# 学习资源导航：路线图、电子书、速查表、博客、newsletter、播客、YouTube、社区与会议。',
+    to: '/docs/dotnet',
+  },
 ];
 
 function ProjectCard({project}: {project: Project}): ReactNode {
